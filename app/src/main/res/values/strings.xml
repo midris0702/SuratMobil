@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">SAPO DISHUB PEKANBARU</string>
+    <string name="title_activity_main">SAPO DISHUB PEKANBARU</string>
+    <string name="title_activity_syarat">Info Persyaratan</string>
+    <string name="title_activity_biaya">Biaya &amp; Pembayaran</string>
+    <string name="title_activity_register">Pendaftaran</string>
+    <string name="title_activity_upload">Upload Berkas</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="text_daftar"><u>Daftar sekarang</u></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

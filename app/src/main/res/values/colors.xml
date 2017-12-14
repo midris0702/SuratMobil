@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimaryGreen">#0ace00</color>
+    <color name="colorPrimaryDarkGreen">#09be00</color>
+    <color name="colorGray">#cccccc</color>
+    <color name="colorGrayYoung">#b4b4b4</color>
+    <color name="colorGrayDark">#282828</color>
+    <color name="colorTransparent">#00f7f7f7</color>
+    <color name="colorWhiteTransparent">#7cf7f7f7</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorWhiteDark">#f7f7f7</color>
+    <color name="colorBlackTransparent">#90000000</color>
+    <color name="colorBlackTransparent2">#51000000</color>
+    <color name="primary_text_default_material_dark">#000000</color>
+    <color name="colorSkyBlue">#0088ff</color>
+    <color name="colorDeepSkyBlueDark">#008cff</color>
+    <color name="colorDeepBlue">#1f82ab</color>
+    <color name="colorDeepSkyBlueDark2">#006bc2</color>
+    <color name="colorBlue">#0027d6</color>
+    <color name="colorPrimaryBlue">#0022ba</color>
+    <color name="colorPrimaryBlueDark">#001d9f</color>
+    <color name="colorYellow">#ffc400</color>
+    <color name="colorOrangeLight">#ff9600</color>
+    <color name="colorOrange">#f0ad4e</color>
+    <color name="colorOrangeDark">#e28500</color>
+    <color name="colorOrangeYoung">#faebcc</color>
+    <color name="colorRed">#d70600</color>
+    <color name="colorGoogle">#e74100</color>
+    <color name="colorRedYoung">#ebccd1</color>
+    <color name="colorGreen">#5cb85c</color>
+    <color name="colorBlack">#000000</color>
+    <color name="background_material_dark">#ffffff</color>
+</resources>

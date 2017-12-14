@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryBlue</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryBlueDark</item>
+        <item name="colorAccent">@color/colorSkyBlue</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.New.Bar" parent="Theme.AppCompat.NoActionBar" >
+        <item name="colorPrimaryDark">@color/colorPrimaryBlueDark</item>
+        <item name="colorPrimary">@color/colorPrimaryBlue</item>
+        <item name="android:colorBackground">@color/background_material_dark</item>
+        <item name="actionMenuTextColor">@color/colorGrayDark</item>
+        <item name="android:actionMenuTextColor">@color/colorGrayDark</item>
+    </style>
+
+    <style name="Splash_Theme" parent="Theme.AppCompat.NoActionBar" >
+        <item name="colorPrimaryDark">@color/colorWhite</item>
+    </style>
+
+</resources>
