@@ -28,6 +28,7 @@ import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 
+import net.netne.afahzis.appmobil.ComingsoonActivity;
 import net.netne.afahzis.appmobil.LoginActivity;
 import net.netne.afahzis.appmobil.MainActivity;
 import net.netne.afahzis.appmobil.MenuActivity;
@@ -176,7 +177,7 @@ public class HomeFragment extends Fragment {
         btnKir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i =new Intent(getActivity(),MenuActivity.class);
+                Intent i =new Intent(getActivity(),ComingsoonActivity.class);
                 i.putExtra("type","8");
                 startActivity(i);
             }

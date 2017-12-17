@@ -68,6 +68,8 @@ public class MenuActivity extends AppCompatActivity {
             getSupportActionBar().setTitle("Angkutan Karyawan");
         }else if(type.equals("7")){
             getSupportActionBar().setTitle("Angkutan Orang/Barang");
+        }else if(type.equals("8")){
+            getSupportActionBar().setTitle("Uji Kir");
         }
 
         btnSyarat = (LinearLayout)findViewById(R.id.btn_syarat);
