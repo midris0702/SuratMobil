@@ -144,11 +144,11 @@ public class ProfileFragment extends Fragment {
             }
 
         });
-        mWebView.loadUrl("https://trayektest.000webhostapp.com/Trayek2_3/mobile/profile/?idUser=" + sharedpreferences.getString(AppVar.USER_ID,null));
+        mWebView.loadUrl("http://trayek.dishub-pekanbaru.com/mobile/profile/?idUser=" + sharedpreferences.getString(AppVar.USER_ID,null));
         btnRefresh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mWebView.loadUrl("https://trayektest.000webhostapp.com/Trayek2_3/mobile/profile/?idUser=" + sharedpreferences.getString(AppVar.USER_ID,null));
+                mWebView.loadUrl("http://trayek.dishub-pekanbaru.com/mobile/profile/?idUser=" + sharedpreferences.getString(AppVar.USER_ID,null));
             }
         });
         return view;

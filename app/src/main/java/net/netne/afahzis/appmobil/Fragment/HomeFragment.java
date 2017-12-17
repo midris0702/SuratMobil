@@ -53,7 +53,7 @@ public class HomeFragment extends Fragment {
         // Required empty public constructor
     }
 
-    CardView btnTaxi,btnOplet,btnBus,btnAkap,btnAjap,btnKaryawan,btnBarang,btnLogin;
+    CardView btnTaxi,btnOplet,btnBus,btnAkap,btnAjap,btnKaryawan,btnBarang,btnKir,btnLogin;
     RelativeLayout layoutBanner;
     int chek=0;
     private ViewPagerAdapter viewPagerAdapter;
@@ -87,6 +87,7 @@ public class HomeFragment extends Fragment {
         btnAjap = (CardView) view.findViewById(R.id.btn_ajap);
         btnKaryawan = (CardView) view.findViewById(R.id.btn_karyawan);
         btnBarang = (CardView) view.findViewById(R.id.btn_barang);
+        btnKir = (CardView) view.findViewById(R.id.btn_kir);
         layoutBanner = (RelativeLayout) view.findViewById(R.id.layoutBanner);
         dotsLayouts = (LinearLayout) view.findViewById(R.id.layoutDots);
         viewPager = (ViewPager) view.findViewById(R.id.view_pager);
@@ -168,6 +169,15 @@ public class HomeFragment extends Fragment {
             public void onClick(View view) {
                 Intent i =new Intent(getActivity(),MenuActivity.class);
                 i.putExtra("type","7");
+                startActivity(i);
+            }
+        });
+
+        btnKir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i =new Intent(getActivity(),MenuActivity.class);
+                i.putExtra("type","8");
                 startActivity(i);
             }
         });

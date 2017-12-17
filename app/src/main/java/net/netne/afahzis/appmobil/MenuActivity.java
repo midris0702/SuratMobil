@@ -65,7 +65,7 @@ public class MenuActivity extends AppCompatActivity {
         }else if(type.equals("5")){
             getSupportActionBar().setTitle("Ajap");
         }else if(type.equals("6")){
-            getSupportActionBar().setTitle("Angkkutan Karyawan");
+            getSupportActionBar().setTitle("Angkutan Karyawan");
         }else if(type.equals("7")){
             getSupportActionBar().setTitle("Angkutan Orang/Barang");
         }

@@ -359,6 +359,38 @@
                                     android:textColor="@color/colorGrayDark" />
                             </LinearLayout>
                         </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/btn_kir"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="10dp">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/shape_back_icon"
+                                    android:backgroundTint="@color/colorDeepSkyBlueDark"
+                                    android:padding="7dp"
+                                    android:src="@drawable/ekir" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Uji Kir"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorGrayDark" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
                     </LinearLayout>
                 </LinearLayout>
             </android.support.v4.widget.NestedScrollView>

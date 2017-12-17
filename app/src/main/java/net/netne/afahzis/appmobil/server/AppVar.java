@@ -5,8 +5,8 @@ package net.netne.afahzis.appmobil.server;
  */
 
 public class AppVar {
-    public static final String URL_SERVER = "https://trayektest.000webhostapp.com/Trayek2_3/server.php";
-    public static final String URL_IMAGE = "https://trayektest.000webhostapp.com/Trayek2_3/admin/img_slide/";
+    public static final String URL_SERVER = "http://trayek.dishub-pekanbaru.com/server.php";
+    public static final String URL_IMAGE = "http://trayek.dishub-pekanbaru.com/admin/img_slide/";
 
     //Key API
     public static final String PREF_NAME = "039ff002021b487a6725273d02bbf8cf-trayek-sever";
