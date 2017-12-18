@@ -162,7 +162,7 @@ public class PembayaranActivity extends AppCompatActivity {
                 progressUpload.dismiss();
                 mWebView.setVisibility(View.VISIBLE);
                 ErrorLayout.setVisibility(View.GONE);
-                if(mWebView.getUrl().equals("https://trayektest.000webhostapp.com/Trayek2_3/mobile/pembayaran/?idUser=" + sharedpreferences.getString(AppVar.USER_ID,null) + "&type="+typeTrayek)){
+                if(mWebView.getUrl().equals("http://trayek.dishub-pekanbaru.com/mobile/pembayaran/?idUser=" + sharedpreferences.getString(AppVar.USER_ID,null) + "&type="+typeTrayek)){
                     cekhalaman=1;
                 }
             }
@@ -234,11 +234,11 @@ public class PembayaranActivity extends AppCompatActivity {
                 }
             }
         });
-        mWebView.loadUrl("https://trayektest.000webhostapp.com/Trayek2_3/mobile/pembayaran/?idUser=" + sharedpreferences.getString(AppVar.USER_ID,null)+"&type="+typeTrayek);
+        mWebView.loadUrl("http://trayek.dishub-pekanbaru.com/mobile/pembayaran/?idUser=" + sharedpreferences.getString(AppVar.USER_ID,null)+"&type="+typeTrayek);
         btnRefresh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mWebView.loadUrl("https://trayektest.000webhostapp.com/Trayek2_3/mobile/pembayaran/?idUser=" + sharedpreferences.getString(AppVar.USER_ID,null)+"&type="+typeTrayek);
+                mWebView.loadUrl("http://trayek.dishub-pekanbaru.com/mobile/pembayaran/?idUser=" + sharedpreferences.getString(AppVar.USER_ID,null)+"&type="+typeTrayek);
             }
         });
     }
