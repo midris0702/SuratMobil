@@ -159,8 +159,6 @@ public class MainActivity extends AppCompatActivity {
 
             txtPerizinan.setTextColor(Color.parseColor("#cccccc"));
             imgPerizinan.setColorFilter(Color.parseColor("#cccccc"));
-            txtInbox.setTextColor(Color.parseColor("#cccccc"));
-            imgInbox.setColorFilter(Color.parseColor("#cccccc"));
             txtProfile.setTextColor(Color.parseColor("#cccccc"));
             imgProfile.setColorFilter(Color.parseColor("#cccccc"));
             AppBarLayout.setVisibility(View.GONE);
