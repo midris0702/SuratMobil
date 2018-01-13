@@ -83,30 +83,7 @@
                 android:id="@+id/txtPerizinan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Perizinan"
-                android:textColor="@color/colorGray" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/btnInbox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/imgInbox"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_mail"
-                android:tint="@color/colorGray" />
-
-            <TextView
-                android:id="@+id/txtInbox"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Inbox"
+                android:text="Trayek Saya"
                 android:textColor="@color/colorGray" />
         </LinearLayout>
 

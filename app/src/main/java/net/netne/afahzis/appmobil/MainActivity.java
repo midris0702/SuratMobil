@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     FrameLayout viewPage;
-    LinearLayout btnHome, btnPerizinan, btnInbox, btnProfile;
+    LinearLayout btnHome, btnPerizinan, btnProfile;
     Fragment frg = null;
     FragmentTransaction transaction = null;
     int menu=1;
@@ -70,16 +70,13 @@ public class MainActivity extends AppCompatActivity {
         viewPage = (FrameLayout)findViewById(R.id.pageView);
         btnHome = (LinearLayout)findViewById(R.id.btnHome);
         btnPerizinan = (LinearLayout)findViewById(R.id.btnPerizinan);
-        btnInbox = (LinearLayout)findViewById(R.id.btnInbox);
         btnProfile = (LinearLayout)findViewById(R.id.btnProfile);
 
         imgHome =(ImageView)findViewById(R.id.imgHome);
-        imgInbox = (ImageView)findViewById(R.id.imgInbox);
         imgPerizinan = (ImageView)findViewById(R.id.imgPerizinan);
         imgProfile = (ImageView)findViewById(R.id.imgProfile);
 
         txtHome =(TextView)findViewById(R.id.txtHome);
-        txtInbox = (TextView)findViewById(R.id.txtInbox);
         txtPerizinan = (TextView)findViewById(R.id.txtPerizinan);
         txtProfile = (TextView)findViewById(R.id.txtProfile);
 
@@ -102,8 +99,6 @@ public class MainActivity extends AppCompatActivity {
 
                     txtPerizinan.setTextColor(Color.parseColor("#cccccc"));
                     imgPerizinan.setColorFilter(Color.parseColor("#cccccc"));
-                    txtInbox.setTextColor(Color.parseColor("#cccccc"));
-                    imgInbox.setColorFilter(Color.parseColor("#cccccc"));
                     txtProfile.setTextColor(Color.parseColor("#cccccc"));
                     imgProfile.setColorFilter(Color.parseColor("#cccccc"));
                     AppBarLayout.setVisibility(View.GONE);
@@ -122,8 +117,6 @@ public class MainActivity extends AppCompatActivity {
 
                     txtHome.setTextColor(Color.parseColor("#cccccc"));
                     imgHome.setColorFilter(Color.parseColor("#cccccc"));
-                    txtInbox.setTextColor(Color.parseColor("#cccccc"));
-                    imgInbox.setColorFilter(Color.parseColor("#cccccc"));
                     txtProfile.setTextColor(Color.parseColor("#cccccc"));
                     imgProfile.setColorFilter(Color.parseColor("#cccccc"));
                     AppBarLayout.setVisibility(View.VISIBLE);
@@ -145,8 +138,6 @@ public class MainActivity extends AppCompatActivity {
                     imgHome.setColorFilter(Color.parseColor("#cccccc"));
                     txtPerizinan.setTextColor(Color.parseColor("#cccccc"));
                     imgPerizinan.setColorFilter(Color.parseColor("#cccccc"));
-                    txtInbox.setTextColor(Color.parseColor("#cccccc"));
-                    imgInbox.setColorFilter(Color.parseColor("#cccccc"));
                     AppBarLayout.setVisibility(View.VISIBLE);
                 }
                 menu=3;
@@ -155,27 +146,6 @@ public class MainActivity extends AppCompatActivity {
                 }else{
                     viewPage.setVisibility(View.VISIBLE);
                 }
-            }
-        });
-
-        btnInbox.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (menu!=4) {
-                    openFragment(new InboxFragment());
-                    txtInbox.setTextColor(Color.parseColor("#0022ba"));
-                    imgInbox.setColorFilter(Color.parseColor("#0022ba"));
-
-                    txtHome.setTextColor(Color.parseColor("#cccccc"));
-                    imgHome.setColorFilter(Color.parseColor("#cccccc"));
-                    txtPerizinan.setTextColor(Color.parseColor("#cccccc"));
-                    imgPerizinan.setColorFilter(Color.parseColor("#cccccc"));
-                    txtProfile.setTextColor(Color.parseColor("#cccccc"));
-                    imgProfile.setColorFilter(Color.parseColor("#cccccc"));
-                    AppBarLayout.setVisibility(View.VISIBLE);
-                }
-                menu=4;
-                viewPage.setVisibility(View.VISIBLE);
             }
         });
     }
