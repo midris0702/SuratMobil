@@ -54,7 +54,7 @@ public class HomeFragment extends Fragment {
         // Required empty public constructor
     }
 
-    CardView btnTaxi,btnOplet,btnBus,btnAkap,btnAjap,btnKaryawan,btnBarang,btnKir,btnLogin;
+    CardView btnTaxi,btnOplet,btnBus,btnKaryawan,btnBarang,btnLogin;
     RelativeLayout layoutBanner;
     int chek=0;
     private ViewPagerAdapter viewPagerAdapter;
@@ -84,11 +84,8 @@ public class HomeFragment extends Fragment {
         btnTaxi = (CardView) view.findViewById(R.id.btn_taxi);
         btnOplet = (CardView) view.findViewById(R.id.btn_oplet);
         btnBus = (CardView) view.findViewById(R.id.btn_bus);
-        btnAkap = (CardView) view.findViewById(R.id.btn_akap);
-        btnAjap = (CardView) view.findViewById(R.id.btn_ajap);
         btnKaryawan = (CardView) view.findViewById(R.id.btn_karyawan);
         btnBarang = (CardView) view.findViewById(R.id.btn_barang);
-        btnKir = (CardView) view.findViewById(R.id.btn_kir);
         layoutBanner = (RelativeLayout) view.findViewById(R.id.layoutBanner);
         dotsLayouts = (LinearLayout) view.findViewById(R.id.layoutDots);
         viewPager = (ViewPager) view.findViewById(R.id.view_pager);
@@ -138,24 +135,6 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        btnAkap.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i =new Intent(getActivity(),MenuActivity.class);
-                i.putExtra("type","4");
-                startActivity(i);
-            }
-        });
-
-        btnAjap.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i =new Intent(getActivity(),MenuActivity.class);
-                i.putExtra("type","5");
-                startActivity(i);
-            }
-        });
-
         btnKaryawan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -170,15 +149,6 @@ public class HomeFragment extends Fragment {
             public void onClick(View view) {
                 Intent i =new Intent(getActivity(),MenuActivity.class);
                 i.putExtra("type","7");
-                startActivity(i);
-            }
-        });
-
-        btnKir.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i =new Intent(getActivity(),ComingsoonActivity.class);
-                i.putExtra("type","8");
                 startActivity(i);
             }
         });
