@@ -32,7 +32,7 @@ import java.util.HashMap;
 public class MenuActivity extends AppCompatActivity {
 
     Toolbar toolbar;
-    LinearLayout btnSyarat,btnDaftar,btnBayar,btnUpload,btnProof,btnJadwal;
+    LinearLayout btnSyarat,btnDaftar,btnBayar,btnUpload,btnProof;
     String type;
     String setTanggal;
     SharedPreferences sharedpreferences;
@@ -76,7 +76,6 @@ public class MenuActivity extends AppCompatActivity {
         btnBayar = (LinearLayout)findViewById(R.id.btn_bayar);
         btnDaftar = (LinearLayout)findViewById(R.id.btn_daftar);
         btnUpload = (LinearLayout)findViewById(R.id.btn_upload);
-        btnJadwal = (LinearLayout)findViewById(R.id.btnJadwal);
         btnProof = (LinearLayout)findViewById(R.id.btnProof);
 
         btnSyarat.setOnClickListener(new View.OnClickListener() {
@@ -115,36 +114,6 @@ public class MenuActivity extends AppCompatActivity {
                     Intent i = new Intent(MenuActivity.this, UploadActivity.class);
                     i.putExtra("type", type);
                     startActivity(i);
-                }else{
-                    Toast.makeText(MenuActivity.this,"Silahkan Login Terlebih Dahulu.", Toast.LENGTH_LONG).show();
-                }
-            }
-        });
-        btnJadwal.setOnClickListener(new View.OnClickListener() {
-            @SuppressLint("NewApi")
-            @Override
-            public void onClick(View view) {
-                if(login!=null){
-                    View v = getLayoutInflater().inflate(R.layout.inflater_calendar,null);
-                    final DatePicker tanggal = (DatePicker)v.findViewById(R.id.datePick);
-                    final AlertDialog.Builder kalender = new AlertDialog.Builder(MenuActivity.this);
-                    kalender.setTitle("Pilih Jadwal");
-                    kalender.setView(v);
-                    kalender.setPositiveButton("Submit", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
-                            setTanggal = String.valueOf(tanggal.getYear())+"/"+String.valueOf(tanggal.getMonth()+1)+"/"+String.valueOf(tanggal.getDayOfMonth());
-                            cekInfo();
-                        }
-                    });
-                    kalender.setNegativeButton("Batal", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
-                            dialogInterface.dismiss();
-                        }
-                    });
-                    kalender.create();
-                    kalender.show();
                 }else{
                     Toast.makeText(MenuActivity.this,"Silahkan Login Terlebih Dahulu.", Toast.LENGTH_LONG).show();
                 }

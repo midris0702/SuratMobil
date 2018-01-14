@@ -57,8 +57,8 @@ public class MainActivity extends AppCompatActivity {
     Fragment frg = null;
     FragmentTransaction transaction = null;
     int menu=1;
-    ImageView imgHome,imgPerizinan,imgInbox,imgProfile;
-    TextView txtHome,txtPerizinan,txtInbox,txtProfile;
+    ImageView imgHome,imgPerizinan,imgProfile;
+    TextView txtHome,txtPerizinan,txtProfile;
 
     Toolbar toolbar;
     AppBarLayout AppBarLayout;
