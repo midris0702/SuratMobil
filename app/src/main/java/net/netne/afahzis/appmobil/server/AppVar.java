@@ -6,7 +6,7 @@ package net.netne.afahzis.appmobil.server;
 
 public class AppVar {
     public static final String URL_SERVER = "http://trayek.dawoodtravel.co.id/server.php";
-    public static final String URL_IMAGE = "http://trayek.dawoodtravel.co.id/admin/img_slide/";
+    public static final String URL_IMAGE = "http://trayek.dawoodtravel.co.id/img/";
 
     //Key API
     public static final String PREF_NAME = "039ff002021b487a6725273d02bbf8cf-trayek-sever";
