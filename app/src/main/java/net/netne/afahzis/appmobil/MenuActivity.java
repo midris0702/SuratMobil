@@ -101,7 +101,7 @@ public class MenuActivity extends AppCompatActivity {
                     i.putExtra("type", type);
                     startActivity(i);
                 }else{
-                    Toast.makeText(MenuActivity.this,"Silahkan Login Terlebih Dahulu.", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MenuActivity.this,"Silahkan Login Terlebih Dahulu..", Toast.LENGTH_LONG).show();
                 }
             }
         });
