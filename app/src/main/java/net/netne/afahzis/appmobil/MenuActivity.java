@@ -75,8 +75,7 @@ public class MenuActivity extends AppCompatActivity {
         btnSyarat = (LinearLayout)findViewById(R.id.btn_syarat);
         btnBayar = (LinearLayout)findViewById(R.id.btn_bayar);
         btnDaftar = (LinearLayout)findViewById(R.id.btn_daftar);
-        btnUpload = (LinearLayout)findViewById(R.id.btn_upload);
-        btnProof = (LinearLayout)findViewById(R.id.btnProof);
+
 
         btnSyarat.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -107,31 +106,6 @@ public class MenuActivity extends AppCompatActivity {
             }
         });
 
-        btnUpload.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(login!=null) {
-                    Intent i = new Intent(MenuActivity.this, UploadActivity.class);
-                    i.putExtra("type", type);
-                    startActivity(i);
-                }else{
-                    Toast.makeText(MenuActivity.this,"Silahkan Login Terlebih Dahulu.", Toast.LENGTH_LONG).show();
-                }
-            }
-        });
-
-        btnProof.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(login!=null){
-                    Intent i = new Intent(MenuActivity.this,PembayaranActivity.class);
-                    i.putExtra("type", type);
-                    startActivity(i);
-                }else{
-                    Toast.makeText(MenuActivity.this,"Silahkan Login Terlebih Dahulu.", Toast.LENGTH_LONG).show();
-                }
-            }
-        });
 
     }
 
