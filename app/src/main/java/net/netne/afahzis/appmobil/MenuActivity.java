@@ -111,7 +111,7 @@ public class MenuActivity extends AppCompatActivity {
 
     public void cekInfo() {
         progressDialog = ProgressDialog.show(this, "Please wait.",
-                "Sedang mengambil data..!", true);
+                "Sedang mengambil data...!", true);
         new CekAsync().execute(
                 AppVar.PREF_NAME,
                 AppVar.KEY_JADWAL,
