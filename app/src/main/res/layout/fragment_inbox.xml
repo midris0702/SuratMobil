@@ -30,7 +30,7 @@
                         android:textColor="@color/colorWhite"
                         android:layout_marginBottom="10dp"
                         android:textAlignment="center"
-                        android:text="LogIn untuk mengAkses Aplikasi"
+                        android:text="Login Untuk Mengakses Aplikasi"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                     <LinearLayout

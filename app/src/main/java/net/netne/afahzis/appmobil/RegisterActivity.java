@@ -160,7 +160,7 @@ public class RegisterActivity extends AppCompatActivity {
                 mWebView.setVisibility(View.VISIBLE);
                 ErrorLayout.setVisibility(View.GONE);
                 progressUpload.dismiss();
-                if(mWebView.getUrl().equals("http://trayek.dawoodtravel.co.id/mobile/upload/?idUser=" + sharedpreferences.getString(AppVar.USER_ID,null) + "&type="+typeTrayek)){
+                if(mWebView.getUrl().equals("http://trayek.dishub-pekanbaru.com/mobile/upload/?idUser=" + sharedpreferences.getString(AppVar.USER_ID,null) + "&type="+typeTrayek)){
                     cekhalaman=1;
                 }
             }
@@ -231,11 +231,11 @@ public class RegisterActivity extends AppCompatActivity {
                 }
             }
         });
-        mWebView.loadUrl("http://trayek.dawoodtravel.co.id/mobile/register/?idUser=" + sharedpreferences.getString(AppVar.USER_ID,null) + "&type="+typeTrayek);
+        mWebView.loadUrl("http://trayek.dishub-pekanbaru.com/mobile/register/?idUser=" + sharedpreferences.getString(AppVar.USER_ID,null) + "&type="+typeTrayek);
         btnRefresh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mWebView.loadUrl("http://trayek.dawoodtravel.co.id/mobile/register/?idUser=" + sharedpreferences.getString(AppVar.USER_ID,null) + "&type="+typeTrayek);
+                mWebView.loadUrl("http://trayek.dishub-pekanbaru.com/mobile/register/?idUser=" + sharedpreferences.getString(AppVar.USER_ID,null) + "&type="+typeTrayek);
             }
         });
 

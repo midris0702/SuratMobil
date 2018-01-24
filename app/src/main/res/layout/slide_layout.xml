@@ -20,7 +20,7 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
             android:textColor="@color/colorGrayDark"
-            android:text="Kunjungi laman"
+            android:text="Kunjungi Laman"
             android:background="@drawable/shape_kunjungi"
             android:paddingTop="5dp"
             android:paddingBottom="5dp"

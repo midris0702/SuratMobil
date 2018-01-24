@@ -37,7 +37,7 @@ public class UploadActivity extends AppCompatActivity {
     private ValueCallback<Uri> mUploadMessage;
     private ValueCallback<Uri[]> mUploadMessage2;
     private final static int FILECHOOSER_RESULTCODE=1;
-    public final static int REQUEST_SELECT_FILE=100;
+    public static final int REQUEST_SELECT_FILE=100;
     int cekhalaman=0;
     SharedPreferences sharedpreferences;
     SharedPreferences.Editor editor;
@@ -162,7 +162,7 @@ public class UploadActivity extends AppCompatActivity {
                 progressUpload.dismiss();
                 mWebView.setVisibility(View.VISIBLE);
                 ErrorLayout.setVisibility(View.GONE);
-                if(mWebView.getUrl().equals("http://trayek.dawoodtravel.co.id/mobile/upload/?idUser=" + sharedpreferences.getString(AppVar.USER_ID,null) + "&type="+typeTrayek)){
+                if(mWebView.getUrl().equals("http://trayek.dishub-pekanbaru.com/mobile/upload/?idUser=" + sharedpreferences.getString(AppVar.USER_ID,null) + "&type="+typeTrayek)){
                     cekhalaman=1;
                 }
             }
@@ -234,11 +234,11 @@ public class UploadActivity extends AppCompatActivity {
                 }
             }
         });
-        mWebView.loadUrl("http://trayek.dawoodtravel.co.id/mobile/trayek_saya/?idUser=" + sharedpreferences.getString(AppVar.USER_ID,null)+"&type="+typeTrayek);
+        mWebView.loadUrl("http://trayek.dishub-pekanbaru.com/mobile/pembayaran/?idUser=" + sharedpreferences.getString(AppVar.USER_ID,null)+"&type="+typeTrayek);
         btnRefresh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mWebView.loadUrl("http://trayek.dawoodtravel.co.id/mobile/trayek_saya/?idUser=" + sharedpreferences.getString(AppVar.USER_ID,null)+"&type="+typeTrayek);
+                mWebView.loadUrl("http://trayek.dishub-pekanbaru.com/mobile/pembayaran/?idUser=" + sharedpreferences.getString(AppVar.USER_ID,null)+"&type="+typeTrayek);
             }
         });
     }

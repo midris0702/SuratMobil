@@ -16,7 +16,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.webkit.DownloadListener;
 import android.widget.LinearLayout;
+import android.widget.Toast;
+import android.net.Uri;
+import android.app.DownloadManager;
+import android.os.Environment;
 
 import net.netne.afahzis.appmobil.LoginActivity;
 import net.netne.afahzis.appmobil.MainActivity;
@@ -24,6 +29,8 @@ import net.netne.afahzis.appmobil.R;
 import net.netne.afahzis.appmobil.RegisterActivity;
 import net.netne.afahzis.appmobil.SingupActivity;
 import net.netne.afahzis.appmobil.server.AppVar;
+
+import static android.content.Context.DOWNLOAD_SERVICE;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -39,6 +46,7 @@ public class PerizinanFragment extends Fragment {
 
     WebView mWebView;
     private ProgressDialog progressDialog;
+
     private LinearLayout ErrorLayout;
     private FloatingActionButton btnRefresh;
     private boolean isConnected = true;
@@ -114,6 +122,15 @@ public class PerizinanFragment extends Fragment {
         mWebView.getSettings().setJavaScriptEnabled(true);
         mWebView.getSettings().setJavaScriptEnabled(true);
         mWebView.getSettings().setUserAgentString("Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.4) Gecko/20100101 Firefox/4.0");
+        mWebView.setDownloadListener(new DownloadListener() {
+            public void onDownloadStart(String url, String userAgent,
+                                        String contentDisposition, String mimetype,
+                                        long contentLength) {
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse("http://trayek.dishub-pekanbaru.com/mobile/trayek_saya/?idUser=" + sharedpreferences.getString(AppVar.USER_ID,null)));
+                startActivity(i);
+            }
+        });
         mWebView.setWebViewClient(new WebViewClient(){
 
             @Override
@@ -144,11 +161,11 @@ public class PerizinanFragment extends Fragment {
             }
 
         });
-        mWebView.loadUrl("http://trayek.dawoodtravel.co.id/mobile/trayek_saya/?idUser=" + sharedpreferences.getString(AppVar.USER_ID,null));
+        mWebView.loadUrl("http://trayek.dishub-pekanbaru.com/mobile/trayek_saya/?idUser=" + sharedpreferences.getString(AppVar.USER_ID,null));
         btnRefresh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mWebView.loadUrl("http://trayek.dawoodtravel.co.id/mobile/trayek_saya/?idUser=" + sharedpreferences.getString(AppVar.USER_ID,null));
+                mWebView.loadUrl("http://trayek.dishub-pekanbaru.com/mobile/trayek_saya/?idUser=" + sharedpreferences.getString(AppVar.USER_ID,null));
             }
         });
         return view;

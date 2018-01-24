@@ -84,7 +84,7 @@
             android:layout_height="wrap_content">
             <TextView
                 android:textColor="@color/colorDeepSkyBlueDark2"
-                android:text="Lupa password?"
+                android:text="Lupa password? silahkan reset melalui website di www.trayek.dishub-pekanbaru.com"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </LinearLayout>
